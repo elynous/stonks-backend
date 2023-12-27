@@ -1,0 +1,13 @@
+https://www.nseindia.com/api/live-analysis-52Week-hlsummary
+https://www.nseindia.com/api/live-analysis-52Week?index=low
+https://www.nseindia.com/api/marketStatus
+https://www.nseindia.com/products/dynaContent/equities/equities/json/online52NewHigh.json
+https://www.nseindia.com/products/dynaContent/equities/equities/json/mostActiveMonthly.json
+
+
+##tools
+
+https://github.com/skamranahmed/indian-ticker-cli/tree/master
+https://pypi.org/project/ind-ticker/
+https://github.com/pranjal-joshi/Screeni-py?tab=readme-ov-file
+https://github.com/sumittttttt/Stock-market-prediction-and-screener
