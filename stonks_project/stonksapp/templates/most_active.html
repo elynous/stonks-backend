@@ -1,0 +1,62 @@
+<!-- stonksapp/templates/most_active_securities.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most Active Securities</title>
+</head>
+<body>
+    <h1>Most Active Securities</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Identifier</th>
+                <th>Last Price</th>
+                <th>pChange</th>
+                <th>Quantity Traded</th>
+                <th>Total Traded Volume</th>
+                <th>Total Traded Value</th>
+                <th>Previous Close</th>
+                <th>Ex-Date</th>
+                <th>Purpose</th>
+                <th>Year High</th>
+                <th>Year Low</th>
+                <th>Change</th>
+                <th>Open</th>
+                <th>Close Price</th>
+                <th>Day High</th>
+                <th>Day Low</th>
+                <th>Last Update Time</th>
+                <!-- Add other columns as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in stocks_data %}
+            <tr>
+                <td>{{ stock.symbol }}</td>
+                <td>{{ stock.identifier }}</td>
+                <td>{{ stock.lastPrice }}</td>
+                <td>{{ stock.pChange }}</td>
+                <td>{{ stock.quantityTraded }}</td>
+                <td>{{ stock.totalTradedVolume }}</td>
+                <td>{{ stock.totalTradedValue }}</td>
+                <td>{{ stock.previousClose }}</td>
+                <td>{{ stock.exDate }}</td>
+                <td>{{ stock.purpose }}</td>
+                <td>{{ stock.yearHigh }}</td>
+                <td>{{ stock.yearLow }}</td>
+                <td>{{ stock.change }}</td>
+                <td>{{ stock.open }}</td>
+                <td>{{ stock.closePrice }}</td>
+                <td>{{ stock.dayHigh }}</td>
+                <td>{{ stock.dayLow }}</td>
+                <td>{{ stock.lastUpdateTime }}</td>
+                <!-- Add other columns as needed -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
